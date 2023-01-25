@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:icon="@drawable/chat"
+        app:showAsAction="always"
+        android:id="@+id/home_menu_chat"
+        android:title="Chat"
+        />
+
+    <item
+        android:icon="@drawable/logout"
+        app:showAsAction="always"
+        android:id="@+id/home_menu_logout"
+        android:title="Logout"
+        />
+
+</menu>

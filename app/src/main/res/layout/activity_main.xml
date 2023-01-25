@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/main_create_account"
+        style="@style/bold_20_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:text="@string/signup"
+        android:textSize="@dimen/_20sdp" />
+
+    <ScrollView
+        android:layout_above="@+id/main_create_account"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/main_tittle"
+                android:textSize="@dimen/_20sdp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/ptc_1f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/login"
+                />
+
+            <EditText
+                android:id="@+id/main_email"
+                style="@style/medium_18_edit"
+                android:drawableLeft="@drawable/ic_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/main_tittle"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:hint="@string/email_hint"
+                android:inputType="textEmailAddress"
+                />
+
+            <EditText
+                android:id="@+id/main_password"
+                style="@style/medium_18_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/main_email"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/custom_border"
+                android:drawableLeft="@drawable/ic_password"
+                android:hint="@string/password_hint"
+                android:inputType="textPassword"
+                android:padding="@dimen/_5sdp" />
+
+            <Button
+                android:id="@+id/main_login"
+                style="@style/bold_20_button"
+                android:visibility="gone"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/main_password"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="Login" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+    
+
+
+
+</RelativeLayout>

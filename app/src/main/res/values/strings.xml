@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">E-Commerce Retail Store</string>
+    <string name="signup">Create An Account</string>
+    <string name="login">Login Form</string>
+    <string name="email_hint">Email ID</string>
+    <string name="password_hint">Password</string>
+
+    <string name="name_hint">Name</string>
+    <string name="contact_hint">Contact No</string>
+    <string name="confirm_password_hint">Confirm Password</string>
+    <string name="date_of_birth">Date Of Birth</string>
+
+    <string name="price_symbol">₹</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
